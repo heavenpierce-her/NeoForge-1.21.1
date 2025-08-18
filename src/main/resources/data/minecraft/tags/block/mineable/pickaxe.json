@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "heavensmod:paper_block",
+    "heavensmod:job_ore",
+    "heavensmod:jobapp_block"
+
+  ]
+}

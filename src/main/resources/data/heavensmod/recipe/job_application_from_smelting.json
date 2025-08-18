@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 2,
+  "group": "job_application",
+  "ingredient": {
+    "item": "heavensmod:job_ore"
+  },
+  "result": {
+    "id": "heavensmod:job_application"
+  }
+}

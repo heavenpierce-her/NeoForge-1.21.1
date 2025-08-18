@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                     output.accept(ModBlocks.JOB_BLOCK);
                     output.accept(ModBlocks.PAPER_BLOCK);
+                    output.accept(ModBlocks.JOBAPPLICATIONORE);
 
                     }) .build());
 
