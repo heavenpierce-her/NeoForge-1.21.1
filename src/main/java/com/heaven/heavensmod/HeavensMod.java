@@ -1,5 +1,7 @@
-package com.heaven.janeknifemod;
+package com.heaven.heavensmod;
 
+import com.heaven.heavensmod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -18,18 +20,21 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(janeknifemod.MOD_ID)
-public class janeknifemod {
+@Mod(HeavensMod.MOD_ID)
+public class HeavensMod {
 
-    public static final String MOD_ID = "janeknifemod";
+    public static final String MOD_ID = "heavensmod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public janeknifemod(IEventBus modEventBus, ModContainer modContainer) {
+    public HeavensMod(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+
+        ModItems.register(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -44,7 +49,11 @@ public class janeknifemod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+    event.accept(ModItems.FIRSTMODITEMYEAH);
+    event.accept(ModItems.JANEDOE);
+    event.accept(ModItems.GETAJOB);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

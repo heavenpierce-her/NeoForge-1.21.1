@@ -1,4 +1,4 @@
-package com.heaven.janeknifemod;
+package com.heaven.heavensmod;
 
 import java.util.List;
 
