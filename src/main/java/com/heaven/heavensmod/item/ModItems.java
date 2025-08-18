@@ -17,6 +17,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PAPER = ITEMS.register ("paper",
         () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> JOBMAKER = ITEMS.register ("the_jobber",
+            () -> new Item (new Item.Properties().durability(128)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

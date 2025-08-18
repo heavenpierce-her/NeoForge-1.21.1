@@ -35,6 +35,7 @@ public static final Supplier<CreativeModeTab> HEAVENS_ITEMS_TAB = CREATIVE_MODE_
                         output.accept(ModItems.PAPER);
                         output.accept(ModItems.GETAJOB);
                         output.accept(ModItems.JANEDOE);
+                        output.accept(ModItems.JOBMAKER);
                     }) .build());
 
     public static void register(IEventBus eventBus) {
