@@ -5,5 +5,8 @@
   "item.heavensmod.paper": "Paper Sheet",
 
   "block.heavensmod.jobapp_block": "Job Application Cube",
-  "block.heavensmod.paper_block": "Photorealistic Paper"
+  "block.heavensmod.paper_block": "Photorealistic Paper",
+
+  "creativetab.heavensmod.heavens_blocks": "Heaven's Blocks",
+  "creativetab.heavensmod.heavens_items": "Heaven's Items"
 }
